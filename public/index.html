@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Bloc bleu : Rechercher un contact -->
+    <div class="header-section">
+        <p>Rechercher un contact</p>
+    </div>
+
+    <!-- Bloc blanc : Recherche d'une fiche de contact -->
+    <div class="title-section">
+        <h1>Recherche d'une fiche de contact</h1>
+    </div>
+
+    <!-- Bloc 3 : Barre de recherche -->
+    <div class="search-section">
+        <p>Renseigner un nom ou une dénomination</p>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Nom ou dénomination">
+        </div>
+        <div class="search-button">
+            <button class="btn-search" onclick="searchClients()">Rechercher</button>
+        </div>
+    </div>
+
+    <!-- Bloc 4 : Tableau des contacts -->
+    <div class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Adresse</th>
+                    <th>Ville</th>
+                    <th>Téléphone</th>
+                    <th><!-- Colonne vide --></th>
+                </tr>
+            </thead>
+            <tbody id="client-table-body">
+                <tr>
+                    <td>
+                        <div class="initials-circle">PM</div>
+                        Paul MICHEL
+                    </td>
+                    <td></td> <!-- Colonne vide -->
+                    <td></td> <!-- Colonne vide -->
+                    <td></td> <!-- Colonne vide -->
+                    <td> <button class="btn-icon">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <button class="btn-action">Voir</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="initials-circle">MB</div>
+                        Mathieu BOMPART
+                    </td>
+                    <td>836 rue du Mas de Verchant</td>
+                    <td>34000 - MONTPELLIER</td>
+                    <td>01 23 45 67 89</td>
+                    <td> <button class="btn-icon">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <button class="btn-action">Voir</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="initials-circle">CP</div>
+                        Céline PERIK
+                    </td>
+                    <td>836 rue du Mas de Verchant</td>
+                    <td>34000 - MONTPELLIER</td>
+                    <td>09 87 65 43 21</td>
+                    <td> <button class="btn-icon">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <button class="btn-action">Voir</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="initials-circle">JB</div>
+                        Jean-Yves BAUDIN
+                    </td>
+                    <td></td> <!-- Colonne vide -->
+                    <td></td> <!-- Colonne vide -->
+                    <td></td> <!-- Colonne vide -->
+                    <td> <button class="btn-icon">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <button class="btn-action">Voir</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="initials-circle">DR</div>
+                        Dominique ROGER
+                    </td>
+                    <td>836 rue du Mas de Verchant</td>
+                    <td>34000 - MONTPELLIER</td>
+                    <td>02 34 56 78 90</td>
+                    <td> <button class="btn-icon">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <button class="btn-action">Voir</button></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Ajout du fichier JavaScript -->
+    <script src="app.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Mathieu BOMPART",
+    "phone": "0123456789",
+    "email": "mathieu@bompart.mb",
+    "address": "836 rue du Mas de Verchant",
+    "postalCode": "34000",
+    "city": "Montpellier"
+  },
+  {
+    "id": 2,
+    "name": "Paul MICHEL",
+    "phone": "",
+    "email": "",
+    "address": "",
+    "postalCode": "",
+    "city": ""
+  },
+  {
+    "id": 3,
+    "name": "Céline PERIK",
+    "phone": "0987654321",
+    "email": "celine@perik.com",
+    "address": "836 rue du Mas de Verchant",
+    "postalCode": "34000",
+    "city": "Montpellier"
+  },
+  {
+    "id": 4,
+    "name": "Jean-Yves BAUDIN",
+    "phone": "",
+    "email": "",
+    "address": "",
+    "postalCode": "",
+    "city": ""
+  },
+  {
+    "id": 5,
+    "name": "Dominique ROGER",
+    "phone": "0234567890",
+    "email": "dom@roger.com",
+    "address": "836 rue du Mas de Verchant",
+    "postalCode": "34000",
+    "city": "Montpellier"
+  }
+]

@@ -1,0 +1,482 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fond général */
+}
+
+/* Bloc bleu : Rechercher un contact */
+.header-section {
+    background-color: #007bff; /* Fond bleu */
+    text-align: left; /* Texte aligné à gauche */
+    padding: 10px; /* Espace intérieur */
+    margin-bottom: 30px; /* Espace en dessous */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    color: white; /* Texte blanc */
+}
+
+.header-section p {
+    margin: 0; /* Supprime les marges par défaut */
+    font-size: 20px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Deuxième bloc : Recherche d'une fiche de contact */
+.title-section {
+    background-color: #ffffff; /* Fond blanc */
+    text-align: center; /* Centre le texte */
+    padding: 20px; /* Espace autour du titre */
+    margin-bottom: 30px; /* Espace en dessous */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    
+}
+
+
+.title-section h1 {
+    margin: 0; /* Supprime les marges par défaut */
+    font-size: 24px; /* Taille du texte */
+    color: #333; /* Couleur sombre */
+    font-weight: bold; /* Texte en gras */
+    padding-right: 900px; /* Décale légèrement à gauche */
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    margin: 20px auto; /* Centre horizontalement */
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espace intérieur */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+
+/* Barre de recherche */
+/* Bloc : Renseigner un nom ou une dénomination */
+.search-section {
+    background-color: #ffffff; /* Fond blanc */
+    text-align: center; /* Centre le contenu */
+    padding: 20px; /* Espace intérieur */
+    margin-bottom: 50px; /* Espace avec le prochain bloc */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre horizontalement tout le contenu */
+    gap: 10px; /* Ajoute de l'espacement entre les éléments internes */
+    padding-left: 90px; /* Décale légèrement à gauche */
+}
+
+.search-section p {
+    margin: 0 0 10px; /* Supprime les marges par défaut, ajoute un espacement en bas */
+    font-weight: bold; /* Met le texte en gras */
+    text-align: left; /* Aligne le texte à gauche */
+    align-self: flex-start; /* Place uniquement le paragraphe à gauche */
+    font-size: 14px; /* Taille légèrement plus petite pour le texte */
+    padding-left: 385px; /* Décale légèrement à gauche */
+    color: #333; /* Couleur sombre */
+}
+
+.search-container {
+    display: flex; /* Affiche le champ et le bouton sur une ligne */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 10px; /* Ajoute un espace entre le champ et le bouton */
+    width: 100%;
+    max-width: 510px; /* Limite la largeur totale */
+    justify-content: flex-start; /* Aligne tout à gauche, le bouton suit le champ */
+    padding-left: 30px; /* Décale légèrement à gauche */
+}
+
+.search-container input {
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 300px; /* Limite la taille du champ */
+    padding: 10px; /* Ajoute un padding général */
+    padding-left: 8px; /* Réduit le décalage à 8px pour un ajustement plus subtil */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+}
+
+.btn-search {
+    padding: 10px 20px;
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0; /* Empêche le bouton de rétrécir */
+    margin-left: auto; /* Pousse le bouton à la droite du champ */
+    padding-left: 30px; /* Décale légèrement à gauche */
+}
+
+.btn-search:hover {
+    background-color: #e67e22; /* Couleur du bouton au survol */
+}
+/* Bloc : Tableau des contacts */
+.table-section {
+    background-color: #ffffff; /* Fond blanc */
+    text-align: center; /* Centre le contenu */
+    padding: 20px; /* Espace intérieur */
+    margin-top: 30px; /* Ajoute un espace au-dessus du tableau */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: none; /* Supprime toutes les bordures */
+    border-bottom: 1px solid #ddd; /* Garde uniquement une ligne en dessous des cellules */
+    padding: 10px;
+    text-align: left; /* Texte aligné à gauche */
+    font-size: 14px; /* Taille du texte */
+}
+table th {
+    background-color: #f4f4f4; /* Fond clair pour l'en-tête */
+    font-weight: bold; /* Texte en gras */
+    color: #333; /* Couleur sombre */
+}
+
+table td:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ajoute un espace entre les initiales et le texte */
+}
+
+.initials-circle {
+    width: 35px;
+    height: 35px;
+    background-color: #007bff; /* Fond bleu */
+    color: white; /* Couleur du texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Rond parfait */
+    font-weight: bold; /* Texte en gras */
+    font-size: 14px; /* Taille du texte */
+}
+
+/* Boutons d'action dans le tableau */
+table td button {
+    background-color: #007bff; /* Fond bleu */
+    color: white; /* Texte blanc */
+    border: none;
+    padding: 8px 12px; /* Espacement intérieur */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de clic */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table td button:hover {
+    background-color: #0056b3; /* Fond bleu foncé au survol */
+}
+
+table td button i {
+    font-size: 16px; /* Icône légèrement agrandie */
+}
+/* Style pour le bouton contenant l'icône */
+.btn-icon {
+    background: none; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur de clic */
+    padding: 0; /* Supprime le padding */
+    margin-right: 10px; /* Espace entre l'icône et le bouton "Voir" */
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour l'icône de recherche */
+.btn-icon .fa-search {
+    font-size: 16px; /* Taille de l'icône */
+    color: #777; /* Couleur grise */
+}
+/* Changer la couleur de fond des cercles des initiales */
+.initials-circle {
+    width: 35px;
+    height: 35px;
+    background-color: #bbb; /* Couleur grise */
+    color: white; /* Couleur du texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Rond parfait */
+    font-weight: bold; /* Texte en gras */
+    font-size: 14px; /* Taille du texte */
+}
+/* Section bleue */
+.header-section {
+    background-color: #007bff; /* Couleur bleue */
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Conteneur principal */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section bleue */
+.header-section {
+    background-color: #007bff; /* Couleur bleue */
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Conteneur principal */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* En-tête des détails */
+.details-header {
+    display: flex;
+    justify-content: space-between; /* Éspace entre le nom et le bouton */
+    align-items: center; /* Centre verticalement */
+    margin-bottom: 20px;
+}
+
+.details-header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* Bouton Éditer */
+.btn-edit {
+    background-color: #ff8000; /* Bouton orange */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background-color: #e67e22; /* Couleur au survol */
+}
+
+/* Section des détails */
+.details-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.details-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.details-section th {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 15px;
+    vertical-align: top;
+    color: #333;
+    width: 30%;
+}
+
+.details-section td {
+    padding: 10px 15px;
+    width: 70%;
+}
+
+/* Style des champs du formulaire */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Affiche les champs verticalement */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Couleur sombre */
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 400px; /* Limite la largeur du champ */
+}
+
+/* Boutons */
+.button-group {
+    display: flex;
+    gap: 10px; /* Espace entre les boutons */
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-group button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.button-group button:first-child:hover {
+    background-color: #0056b3;
+}
+
+.button-group button:last-child {
+    background-color: #ff8000;
+    color: white;
+}
+
+.button-group button:last-child:hover {
+    background-color: #e67e22;
+}
+/* Section d'édition */
+.edit-section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.edit-section h2 {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Section bleue */
+.header-section {
+    background-color: #007bff; /* Couleur bleue */
+    color: white;
+    text-align: left; /* Aligne le texte à gauche */
+    padding: 10px 20px; /* Espace intérieur */
+    font-size: 18px; /* Taille du texte */
+    font-weight: bold;
+}
+
+/* Conteneur principal */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff; /* Fond blanc */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+/* En-tête de l'édition */
+.edit-header {
+    display: flex;
+    justify-content: space-between; /* Aligne le texte et le bouton */
+    align-items: center; /* Centre verticalement */
+    margin-bottom: 20px;
+}
+
+.edit-header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.btn-edit-header {
+    background-color: #ff8000; /* Bouton orange */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit-header:hover {
+    background-color: #e67e22; /* Couleur au survol */
+}
+
+/* Table d'édition */
+.edit-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.edit-section th {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 15px;
+    vertical-align: top;
+    color: #333;
+    width: 30%;
+}
+
+.edit-section td {
+    padding: 10px 15px;
+    width: 70%;
+}
+
+.edit-section input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Boutons Annuler et Enregistrer */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end; /* Aligne les boutons à droite */
+    gap: 10px; /* Espace entre les boutons */
+}
+
+.btn-cancel {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background-color: #bbb;
+}
+
+.btn-save {
+    background-color: #28a745; /* Vert pour enregistrer */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}

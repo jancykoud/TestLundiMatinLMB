@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <div class="header-section">
+        <p>Rechercher un contact</p>
+    </div>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+        <!-- En-tête avec le nom et le bouton Éditer -->
+        <div class="details-header">
+            <h1 id="contact-name">Mathieu BOMPART</h1>
+            <button id="edit-button" class="btn-edit" onclick="editClient()">Éditer</button>
+        </div>
+
+        <!-- Section des détails -->
+        <div class="details-section">
+            <h2>Informations</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Prénom & Nom :</th>
+                        <td id="contact-fullname"></td>
+                    </tr>
+                    <tr>
+                        <th>Téléphone :</th>
+                        <td id="contact-phone"></td>
+                    </tr>
+                    <tr>
+                        <th>Email :</th>
+                        <td id="contact-email"></td>
+                    </tr>
+                    <tr>
+                        <th>Adresse :</th>
+                        <td id="contact-address"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Inclusion du fichier JavaScript -->
+    <script>
+        console.log(localStorage.getItem('clientId')); // Vérification de l'ID stocké dans le localStorage
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

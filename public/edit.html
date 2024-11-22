@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier le Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <div class="header-section">
+        <p>Rechercher un contact</p>
+    </div>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+        <!-- En-tête avec le nom du contact et le bouton "Éditer" -->
+        <div class="edit-header">
+            <h1 id="contact-name">Mathieu BOMPART</h1>
+            <button class="btn-edit-header" onclick="saveClient()">Éditer</button>
+        </div>
+
+        <!-- Formulaire d'édition -->
+        <div class="edit-section">
+            <form id="edit-form">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Prénom & Nom :</th>
+                            <td><input type="text" id="name" placeholder="Mathieu BOMPART"></td>
+                        </tr>
+                        <tr>
+                            <th>Téléphone :</th>
+                            <td><input type="text" id="phone" placeholder="0123456789"></td>
+                        </tr>
+                        <tr>
+                            <th>Email :</th>
+                            <td><input type="email" id="email" placeholder="mathieu@bompart.mb"></td>
+                        </tr>
+                        <tr>
+                            <th>Adresse :</th>
+                            <td><input type="text" id="address" placeholder="836 rue du Mas de Verchant"></td>
+                        </tr>
+                        <tr>
+                            <th>Code Postal :</th>
+                            <td><input type="text" id="postalCode" placeholder="34000"></td>
+                        </tr>
+                        <tr>
+                            <th>Ville :</th>
+                            <td><input type="text" id="city" placeholder="Montpellier"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Boutons -->
+                <div class="form-buttons">
+                    <button type="button" class="btn-cancel" onclick="window.history.back()">Annuler</button>
+                    <button type="button" class="btn-save" onclick="saveClient()">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
